@@ -4,6 +4,7 @@ wx-rss.js
 ### 概述
 >一个轻量级的事件订阅器，主要解决微信小程序跨页面传参问题
 
+
 ### API
 1.``on(name,callback,context)``
 

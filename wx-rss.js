@@ -77,7 +77,7 @@ module.exports = new class Rss{
      *
      * @param obj          -> Object        存储的订阅对象
      * @param callback     -> Function      订阅对象的事件回调
-     * @private
+     *
      */
     _each(obj,callback){
         for (let key in obj) {
@@ -92,7 +92,7 @@ module.exports = new class Rss{
      * @param context      -> Number                    订阅指定序号
      * @param type         -> Number {0:'on',1:'one}    订阅类型
      * @returns {*}        -> Object                    订阅状态对象
-     * @private
+     *
      */
     _bind(name,callback,context,type){
         // 参数类型判断
