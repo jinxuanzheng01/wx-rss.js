@@ -22,7 +22,7 @@ wx-rss.js
 
 响应订阅事件，``params``作为参数返回给callback
 
-3.``off(event_obj / event_string)`` 解除绑定
+4.``off(event_obj / event_string)`` 解除绑定
 
 * 当``event``数据类型是``string``时，取消绑定当前所传入``event``事件名称
 * 当``event``数据类型是``obj``时，取消绑定当前订阅对象
@@ -36,7 +36,7 @@ wx-rss.js
     rss.off('a');
 
 ```
-4.``clear()``
+5.``clear()``
 
 清除所有订阅事件
 
@@ -58,14 +58,14 @@ wx-rss.js
 
 ``` javascript
     Page({
-        /*打开页面时进行订阅*/
+        /* 打开页面时进行订阅 */
         onLoad(){
             rss.on('example',(req)=>{           // req 为子页面传递参数
                 console.log(req.name);          // result: 'Jxz'
                 console.log(req.age);           // result: 23
             });
         },
-        /*关掉页面时卸载订阅*/
+        /* 关掉页面时卸载订阅 */
         onUnload(){
             rss.off('example');
         }
